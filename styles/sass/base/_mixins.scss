@@ -1,0 +1,100 @@
+/* Mixin para flexbox. Llamando a las variables $align y $justify como argumentos, se podrá cambiar su valor */
+
+@mixin flexbox($align, $justify, $direction) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+@mixin gradientAnimation {
+    @keyframes gradientAnimation {
+      0% {
+        background-color: $primary-color; // Color base
+      }
+      10% {
+        background: linear-gradient(15deg, $primary-color, #85cbf2); // Gradiente intermedio 1
+      }
+      20% {
+        background: linear-gradient(30deg, $primary-color, #7bc3f1); // Gradiente intermedio 2
+      }
+      30% {
+        background: linear-gradient(45deg, $primary-color, #72bbed); // Gradiente intermedio 3
+      }
+      40% {
+        background: linear-gradient(60deg, $primary-color, #68b5eb); // Gradiente intermedio 4
+      }
+      50% {
+        background: linear-gradient(75deg, $primary-color, #5faeec); // Gradiente intermedio 5
+      }
+      60% {
+        background: linear-gradient(90deg, $primary-color, #56a6e9); // Gradiente intermedio 6
+      }
+      70% {
+        background: linear-gradient(105deg, $primary-color, #4c9ee8); // Gradiente intermedio 7
+      }
+      80% {
+        background: linear-gradient(120deg, $primary-color, #4396e6); // Gradiente intermedio 8
+      }
+      90% {
+        background: linear-gradient(135deg, $primary-color, #3a8de5); // Gradiente intermedio 9
+      }
+      100% {
+        background: linear-gradient(150deg, $primary-color, $secondary-color); // Gradiente deseado
+      }
+    }
+  
+    animation: gradientAnimation .2s ease-in-out forwards;
+  }
+/*
+@mixin gradientAnimation {
+    $startColor: #8FD3F4;
+    $endColor: #7166EF;
+
+    @keyframes gradientAnimation {
+        0% {
+          background-color: #8fd3f4; // Color base
+        }
+        20% {
+          background: linear-gradient(30deg, #8fd3f4, #80c6f1); // Gradiente intermedio 1
+        }
+        40% {
+          background: linear-gradient(60deg, #8fd3f4, #73b9ef); // Gradiente intermedio 2
+        }
+        60% {
+          background: linear-gradient(90deg, #8fd3f4, #66acec); // Gradiente intermedio 3
+        }
+        80% {
+          background: linear-gradient(120deg, #8fd3f4, #59a0ea); // Gradiente intermedio 4
+        }
+        100% {
+          background: linear-gradient(150deg, #8fd3f4, #7166ef); // Gradiente deseado
+        }
+      }
+
+    animation: gradientAnimation 1s ease-in-out forwards;
+}
+
+
+
+@keyframes gradientAnimation {
+    0% {
+      background-color: #8fd3f4; // Color base
+    }
+    20% {
+      background: linear-gradient(30deg, #8fd3f4, #7ec1ef); // Gradiente intermedio 1
+    }
+    40% {
+      background: linear-gradient(60deg, #8fd3f4, #6eadec); // Gradiente intermedio 2
+    }
+    60% {
+      background: linear-gradient(90deg, #8fd3f4, #5c9be9); // Gradiente intermedio 3
+    }
+    80% {
+      background: linear-gradient(120deg, #8fd3f4, #4a88e6); // Gradiente intermedio 4
+    }
+    100% {
+      background: linear-gradient(150deg, #8fd3f4, #7166ef); // Gradiente deseado
+    }
+  }
+*/

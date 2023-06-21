@@ -1,0 +1,93 @@
+/// Estilos particulares del mapa y componentes
+
+// Hace que el mapa llene el tamaño asignado respecto un 100% de alto. Si se elemina el mapa no se muestra
+html.map-html,
+body.map-body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+
+    .map-container {
+        width: 100%;
+        height: calc(100% - 3.5rem);
+
+        #map {
+            width: 100%;
+            height: 100%;
+
+            .gm-ui-hover-effect {
+                top: 0 !important;
+                right: 10px !important;
+
+                & span {
+                    width: 20px !important;
+                    height: 20px !important
+                }
+            }
+
+            #content {
+                margin: .8rem;
+                width: 20vw;
+                font-size: .8rem;
+
+
+
+                .firstHeading {
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+
+                #separator {
+                    width: 100%;
+                    background-color: #e3e3e3;
+                    height: 1px;
+                    margin: .5rem auto;
+                }
+
+                #bodyContent {
+                    display: flex;
+                    flex-direction: column;
+
+                    & span {
+
+                        margin: .15rem 0;
+
+                        .icon {
+                            width: 1rem;
+                            height: 1rem;
+                            margin-right: .3rem;
+                            opacity: .5;
+                        }
+
+
+                        .viewOnMaps {
+                            margin: 5px 1.3rem;
+                            text-decoration: none;
+                        }
+                    }
+
+                    .adInfo {
+                        width: 5rem;
+                        margin: .2rem 0;
+                        padding: .5rem;
+                        align-self: flex-end;
+                        border: none;
+                        border-radius: 2rem;
+                        outline: none;
+                        font-size: .8rem;
+                        font-weight: 600;
+                        background-color: #8fd3f4; // Color hexadecimal inicial
+
+                        &:hover {
+                            @include gradientAnimation; // Incluye la animación al hacer hover
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+}

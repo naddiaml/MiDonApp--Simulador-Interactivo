@@ -1,0 +1,21 @@
+.button-container {
+    width: fit-content;
+    margin: 8vh auto;
+    
+    .button {
+        width: 150px;
+        height: 60px;
+        background: radial-gradient(100% 634.44% at 3.19% 0%, #93B4D4 0%, rgba(87, 169, 245, 0.8) 100%);
+        border-radius: 1.8rem;
+        letter-spacing: .5px;
+        font-weight: 500;
+        transition: .2s;
+        outline: none;
+        
+        &:hover {
+            background-color: $secondary-color;
+            font-weight: 700;
+            transition: .2s;
+        }
+    }
+}

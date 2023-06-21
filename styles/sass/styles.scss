@@ -1,0 +1,18 @@
+/* Partials */
+
+    /* Media Queries */
+    @import 'base/_media.scss';
+
+    /* Archivo específico para variables */
+    @import 'base/_variables.scss';
+
+    /* Archivo específico para mixins */
+    @import 'base/_mixins.scss';
+
+    /* Archivo Reset con estilos universales */
+    @import 'base/_reset.scss';
+    @import 'partials/_header.scss';
+    @import 'partials/_hero.scss';
+    @import 'partials/_button.scss';
+
+    @import 'partials/_map.scss';

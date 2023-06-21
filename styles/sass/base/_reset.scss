@@ -1,0 +1,16 @@
+@import '../base/_variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.current {
+    font-weight: 600;
+}
+
+section:first-of-type {
+    margin-top: 3.5rem;
+}
