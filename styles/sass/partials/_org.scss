@@ -1,0 +1,97 @@
+.org__container {
+    margin: 1.5rem auto;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+
+    .organizacion {
+        padding: 2rem;
+        background-color: #fff;
+        min-height: 22rem;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+        text-align: left;
+        font-size: .85rem;
+
+        .org-name {
+            font-weight: 600;
+        }
+
+        .divider {
+            width: 100%;
+            background-color: #e3e3e3;
+            height: 1px;
+            margin: .5rem auto;
+        }
+
+        .data__container {
+
+            .data {
+                margin: .5rem 0;
+                margin-left: .5rem;
+
+                .info {
+                    font-weight: 600;
+                }
+            }
+
+            .website {
+                font-weight: 500;
+            }
+
+            .data-icon {
+                display: flex;
+                flex-direction: row;
+
+                i {
+                    margin-right: .5rem;
+                    padding-top: 5px;
+                    color: $primary-color;
+                }
+
+            }
+
+            .adress {
+
+                .data-adress {
+                    display: flex;
+                    flex-direction: column;
+
+                    .gm-adress {
+
+                        .onMaps {
+                            text-decoration: none;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+
+            .adInfo {
+                width: 5rem;
+                margin: .2rem 0;
+                padding: .5rem;
+                border: none;
+                border-radius: 2rem;
+                outline: none;
+                font-size: .8rem;
+                font-weight: 600;
+                background-color: #8fd3f4;
+                float: right;
+
+                &:hover {
+                    @include gradientAnimation; // Incluye la animación al hacer hover
+                }
+            }
+        }
+    }
+
+    @include breakpoint {
+        display: flex;
+        flex-direction: column;
+    }
+}

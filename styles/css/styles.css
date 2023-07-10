@@ -370,6 +370,118 @@ header .button:hover {
   transition: 0.2s;
 }
 
+.org__container {
+  margin: 1.5rem auto;
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+.org__container .organizacion {
+  padding: 2rem;
+  background-color: #fff;
+  min-height: 22rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  text-align: left;
+  font-size: 0.85rem;
+}
+.org__container .organizacion .org-name {
+  font-weight: 600;
+}
+.org__container .organizacion .divider {
+  width: 100%;
+  background-color: #e3e3e3;
+  height: 1px;
+  margin: 0.5rem auto;
+}
+.org__container .organizacion .data__container .data {
+  margin: 0.5rem 0;
+  margin-left: 0.5rem;
+}
+.org__container .organizacion .data__container .data .info {
+  font-weight: 600;
+}
+.org__container .organizacion .data__container .website {
+  font-weight: 500;
+}
+.org__container .organizacion .data__container .data-icon {
+  display: flex;
+  flex-direction: row;
+}
+.org__container .organizacion .data__container .data-icon i {
+  margin-right: 0.5rem;
+  padding-top: 5px;
+  color: #8FD3F4;
+}
+.org__container .organizacion .data__container .adress .data-adress {
+  display: flex;
+  flex-direction: column;
+}
+.org__container .organizacion .data__container .adress .data-adress .gm-adress .onMaps {
+  text-decoration: none;
+  font-weight: 500;
+}
+.org__container .organizacion .data__container .adInfo {
+  width: 5rem;
+  margin: 0.2rem 0;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 2rem;
+  outline: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background-color: #8fd3f4;
+  float: right;
+}
+.org__container .organizacion .data__container .adInfo:hover {
+  animation: gradientAnimation 0.2s ease-in-out forwards;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-color: #8FD3F4;
+  }
+  10% {
+    background: linear-gradient(15deg, #8FD3F4, #85cbf2);
+  }
+  20% {
+    background: linear-gradient(30deg, #8FD3F4, #7bc3f1);
+  }
+  30% {
+    background: linear-gradient(45deg, #8FD3F4, #72bbed);
+  }
+  40% {
+    background: linear-gradient(60deg, #8FD3F4, #68b5eb);
+  }
+  50% {
+    background: linear-gradient(75deg, #8FD3F4, #5faeec);
+  }
+  60% {
+    background: linear-gradient(90deg, #8FD3F4, #56a6e9);
+  }
+  70% {
+    background: linear-gradient(105deg, #8FD3F4, #4c9ee8);
+  }
+  80% {
+    background: linear-gradient(120deg, #8FD3F4, #4396e6);
+  }
+  90% {
+    background: linear-gradient(135deg, #8FD3F4, #3a8de5);
+  }
+  100% {
+    background: linear-gradient(150deg, #8FD3F4, #7166EF);
+  }
+}
+@media screen and (max-width: 960px) {
+  .org__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 html.map-html,
 body.map-body {
   width: 100%;
