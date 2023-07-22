@@ -1,61 +1,8 @@
 @charset "UTF-8";
-/* Partials */
 /* Media Queries */
 /* Archivo específico para variables */
 /* Archivo específico para mixins */
 /* Mixin para flexbox. Llamando a las variables $align y $justify como argumentos, se podrá cambiar su valor */
-/*
-@mixin gradientAnimation {
-    $startColor: #8FD3F4;
-    $endColor: #7166EF;
-
-    @keyframes gradientAnimation {
-        0% {
-          background-color: #8fd3f4; // Color base
-        }
-        20% {
-          background: linear-gradient(30deg, #8fd3f4, #80c6f1); // Gradiente intermedio 1
-        }
-        40% {
-          background: linear-gradient(60deg, #8fd3f4, #73b9ef); // Gradiente intermedio 2
-        }
-        60% {
-          background: linear-gradient(90deg, #8fd3f4, #66acec); // Gradiente intermedio 3
-        }
-        80% {
-          background: linear-gradient(120deg, #8fd3f4, #59a0ea); // Gradiente intermedio 4
-        }
-        100% {
-          background: linear-gradient(150deg, #8fd3f4, #7166ef); // Gradiente deseado
-        }
-      }
-
-    animation: gradientAnimation 1s ease-in-out forwards;
-}
-
-
-
-@keyframes gradientAnimation {
-    0% {
-      background-color: #8fd3f4; // Color base
-    }
-    20% {
-      background: linear-gradient(30deg, #8fd3f4, #7ec1ef); // Gradiente intermedio 1
-    }
-    40% {
-      background: linear-gradient(60deg, #8fd3f4, #6eadec); // Gradiente intermedio 2
-    }
-    60% {
-      background: linear-gradient(90deg, #8fd3f4, #5c9be9); // Gradiente intermedio 3
-    }
-    80% {
-      background: linear-gradient(120deg, #8fd3f4, #4a88e6); // Gradiente intermedio 4
-    }
-    100% {
-      background: linear-gradient(150deg, #8fd3f4, #7166ef); // Gradiente deseado
-    }
-  }
-*/
 /* Archivo Reset con estilos universales */
 * {
   margin: 0;
@@ -72,60 +19,7 @@ section:first-of-type {
   margin-top: 3.5rem;
 }
 
-/* Mixin para flexbox. Llamando a las variables $align y $justify como argumentos, se podrá cambiar su valor */
-/*
-@mixin gradientAnimation {
-    $startColor: #8FD3F4;
-    $endColor: #7166EF;
-
-    @keyframes gradientAnimation {
-        0% {
-          background-color: #8fd3f4; // Color base
-        }
-        20% {
-          background: linear-gradient(30deg, #8fd3f4, #80c6f1); // Gradiente intermedio 1
-        }
-        40% {
-          background: linear-gradient(60deg, #8fd3f4, #73b9ef); // Gradiente intermedio 2
-        }
-        60% {
-          background: linear-gradient(90deg, #8fd3f4, #66acec); // Gradiente intermedio 3
-        }
-        80% {
-          background: linear-gradient(120deg, #8fd3f4, #59a0ea); // Gradiente intermedio 4
-        }
-        100% {
-          background: linear-gradient(150deg, #8fd3f4, #7166ef); // Gradiente deseado
-        }
-      }
-
-    animation: gradientAnimation 1s ease-in-out forwards;
-}
-
-
-
-@keyframes gradientAnimation {
-    0% {
-      background-color: #8fd3f4; // Color base
-    }
-    20% {
-      background: linear-gradient(30deg, #8fd3f4, #7ec1ef); // Gradiente intermedio 1
-    }
-    40% {
-      background: linear-gradient(60deg, #8fd3f4, #6eadec); // Gradiente intermedio 2
-    }
-    60% {
-      background: linear-gradient(90deg, #8fd3f4, #5c9be9); // Gradiente intermedio 3
-    }
-    80% {
-      background: linear-gradient(120deg, #8fd3f4, #4a88e6); // Gradiente intermedio 4
-    }
-    100% {
-      background: linear-gradient(150deg, #8fd3f4, #7166ef); // Gradiente deseado
-    }
-  }
-*/
-/* Header */
+/* Mixin para flexbox. Llamando a las variables $align y $justify como argumentos, se podrá cambiar su valor */ /* Header */
 header {
   /* Bootstrap styles - Menú hamburguesa */
   height: 4rem;
@@ -350,36 +244,52 @@ header .button:hover {
   }
 }
 
-.button-container {
-  width: fit-content;
+#Donar {
+  width: 80%;
   margin: 8vh auto;
 }
-.button-container .button {
-  width: 150px;
-  height: 60px;
-  background: radial-gradient(100% 634.44% at 3.19% 0%, #93B4D4 0%, rgba(87, 169, 245, 0.8) 100%);
-  border-radius: 1.8rem;
-  letter-spacing: 0.5px;
-  font-weight: 500;
-  transition: 0.2s;
+#Donar .search-block {
+  width: 100%;
+}
+#Donar .search-block .search-bar {
+  border: 1px solid #dfe1e5;
+  border-radius: 3rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#Donar .search-block .search-bar:hover {
+  border: 1px solid #fff;
+  background: #fff;
+  box-shadow: 0px 3px 20px -10px rgb(100, 100, 100);
+}
+#Donar .search-block .search-bar #search-box {
+  margin-left: 1rem;
+  width: 95%;
+  border: none;
   outline: none;
 }
-.button-container .button:hover {
-  background-color: #7166EF;
-  font-weight: 700;
-  transition: 0.2s;
+#Donar .search-block .search-bar button {
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem;
+  background: radial-gradient(100% 634.44% at 3.19% 0%, #93B4D4 0%, rgba(87, 169, 245, 0.8) 100%);
 }
-
-.org__container {
+#Donar .form__container .resultados {
   margin: 1.5rem auto;
-  width: 60%;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
 }
-.org__container .organizacion {
+#Donar .form__container .resultados .resultado {
   padding: 2rem;
-  background-color: #fff;
+  background-color: #ffffff;
   min-height: 22rem;
   border-radius: 20px;
   display: flex;
@@ -389,43 +299,43 @@ header .button:hover {
   text-align: left;
   font-size: 0.85rem;
 }
-.org__container .organizacion .org-name {
+#Donar .form__container .resultados .resultado .org-name {
   font-weight: 600;
 }
-.org__container .organizacion .divider {
+#Donar .form__container .resultados .resultado .divider {
   width: 100%;
   background-color: #e3e3e3;
   height: 1px;
   margin: 0.5rem auto;
 }
-.org__container .organizacion .data__container .data {
+#Donar .form__container .resultados .resultado .data__container .data {
   margin: 0.5rem 0;
   margin-left: 0.5rem;
 }
-.org__container .organizacion .data__container .data .info {
+#Donar .form__container .resultados .resultado .data__container .data .info {
   font-weight: 600;
 }
-.org__container .organizacion .data__container .website {
+#Donar .form__container .resultados .resultado .data__container .website {
   font-weight: 500;
 }
-.org__container .organizacion .data__container .data-icon {
+#Donar .form__container .resultados .resultado .data__container .data-icon {
   display: flex;
   flex-direction: row;
 }
-.org__container .organizacion .data__container .data-icon i {
+#Donar .form__container .resultados .resultado .data__container .data-icon i {
   margin-right: 0.5rem;
   padding-top: 5px;
   color: #8FD3F4;
 }
-.org__container .organizacion .data__container .adress .data-adress {
+#Donar .form__container .resultados .resultado .data__container .adress .data-adress {
   display: flex;
   flex-direction: column;
 }
-.org__container .organizacion .data__container .adress .data-adress .gm-adress .onMaps {
+#Donar .form__container .resultados .resultado .data__container .adress .data-adress .gm-adress .onMaps {
   text-decoration: none;
   font-weight: 500;
 }
-.org__container .organizacion .data__container .adInfo {
+#Donar .form__container .resultados .resultado .data__container .adInfo {
   width: 5rem;
   margin: 0.2rem 0;
   padding: 0.5rem;
@@ -437,7 +347,7 @@ header .button:hover {
   background-color: #8fd3f4;
   float: right;
 }
-.org__container .organizacion .data__container .adInfo:hover {
+#Donar .form__container .resultados .resultado .data__container .adInfo:hover {
   animation: gradientAnimation 0.2s ease-in-out forwards;
 }
 @keyframes gradientAnimation {
@@ -475,130 +385,30 @@ header .button:hover {
     background: linear-gradient(150deg, #8FD3F4, #7166EF);
   }
 }
+#Donar .form__container #noRFound div {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.1rem;
+  text-align: center;
+}
+#Donar .form__container #noRFound div .noRFound-bold {
+  font-weight: 600;
+  color: #36344A;
+}
+#Donar .form__container #noRFound div img {
+  margin-top: 1.2rem;
+  width: 20rem;
+}
 @media screen and (max-width: 960px) {
-  .org__container {
+  #Donar .form__container .resultados {
     display: flex;
     flex-direction: column;
   }
-}
-
-html.map-html,
-body.map-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-y: hidden;
-}
-html.map-html .map-container,
-body.map-body .map-container {
-  width: 100%;
-  height: calc(100% - 3.5rem);
-}
-html.map-html .map-container #map,
-body.map-body .map-container #map {
-  width: 100%;
-  height: 100%;
-}
-html.map-html .map-container #map .gm-ui-hover-effect,
-body.map-body .map-container #map .gm-ui-hover-effect {
-  top: 0 !important;
-  right: 10px !important;
-}
-html.map-html .map-container #map .gm-ui-hover-effect span,
-body.map-body .map-container #map .gm-ui-hover-effect span {
-  width: 20px !important;
-  height: 20px !important;
-}
-html.map-html .map-container #map #content,
-body.map-body .map-container #map #content {
-  margin: 0.8rem;
-  width: 20vw;
-  font-size: 0.8rem;
-}
-html.map-html .map-container #map #content .firstHeading,
-body.map-body .map-container #map #content .firstHeading {
-  font-size: 1rem;
-  font-weight: 600;
-}
-html.map-html .map-container #map #content #separator,
-body.map-body .map-container #map #content #separator {
-  width: 100%;
-  background-color: #e3e3e3;
-  height: 1px;
-  margin: 0.5rem auto;
-}
-html.map-html .map-container #map #content #bodyContent,
-body.map-body .map-container #map #content #bodyContent {
-  display: flex;
-  flex-direction: column;
-}
-html.map-html .map-container #map #content #bodyContent span,
-body.map-body .map-container #map #content #bodyContent span {
-  margin: 0.15rem 0;
-}
-html.map-html .map-container #map #content #bodyContent span .icon,
-body.map-body .map-container #map #content #bodyContent span .icon {
-  width: 1rem;
-  height: 1rem;
-  margin-right: 0.3rem;
-  opacity: 0.5;
-}
-html.map-html .map-container #map #content #bodyContent span .viewOnMaps,
-body.map-body .map-container #map #content #bodyContent span .viewOnMaps {
-  margin: 5px 1.3rem;
-  text-decoration: none;
-}
-html.map-html .map-container #map #content #bodyContent .adInfo,
-body.map-body .map-container #map #content #bodyContent .adInfo {
-  width: 5rem;
-  margin: 0.2rem 0;
-  padding: 0.5rem;
-  align-self: flex-end;
-  border: none;
-  border-radius: 2rem;
-  outline: none;
-  font-size: 0.8rem;
-  font-weight: 600;
-  background-color: #8fd3f4;
-}
-html.map-html .map-container #map #content #bodyContent .adInfo:hover,
-body.map-body .map-container #map #content #bodyContent .adInfo:hover {
-  animation: gradientAnimation 0.2s ease-in-out forwards;
-}
-@keyframes gradientAnimation {
-  0% {
-    background-color: #8FD3F4;
-  }
-  10% {
-    background: linear-gradient(15deg, #8FD3F4, #85cbf2);
-  }
-  20% {
-    background: linear-gradient(30deg, #8FD3F4, #7bc3f1);
-  }
-  30% {
-    background: linear-gradient(45deg, #8FD3F4, #72bbed);
-  }
-  40% {
-    background: linear-gradient(60deg, #8FD3F4, #68b5eb);
-  }
-  50% {
-    background: linear-gradient(75deg, #8FD3F4, #5faeec);
-  }
-  60% {
-    background: linear-gradient(90deg, #8FD3F4, #56a6e9);
-  }
-  70% {
-    background: linear-gradient(105deg, #8FD3F4, #4c9ee8);
-  }
-  80% {
-    background: linear-gradient(120deg, #8FD3F4, #4396e6);
-  }
-  90% {
-    background: linear-gradient(135deg, #8FD3F4, #3a8de5);
-  }
-  100% {
-    background: linear-gradient(150deg, #8FD3F4, #7166EF);
+  #Donar .form__container #noRFound div img {
+    width: 18rem;
   }
 }
 

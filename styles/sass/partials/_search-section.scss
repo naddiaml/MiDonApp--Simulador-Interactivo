@@ -1,0 +1,177 @@
+#Donar {
+    width: 80%;
+    margin: 8vh auto;
+
+    .search-block {
+        width: 100%;
+
+
+        .search-bar {
+            border: 1px solid #dfe1e5;
+            border-radius: 3rem;
+            padding: .5rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            &:hover {
+                border: 1px solid #fff;
+                background: #fff;
+                box-shadow: 0px 3px 20px -10px rgb(100, 100, 100);
+            }
+
+            #search-box {
+                margin-left: 1rem;
+                width: 95%;
+                border: none;
+                outline: none;
+            }
+
+
+            button {
+                width: 3rem;
+                height: 3rem;
+                text-align: center;
+                outline: none;
+                border: none;
+                border-radius: 50%;
+                padding: .5rem;
+                background: radial-gradient(100% 634.44% at 3.19% 0%, #93B4D4 0%, rgba(87, 169, 245, 0.8) 100%);
+            }
+
+        }
+    }
+
+    .form__container {
+        .resultados {
+            margin: 1.5rem auto;
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+
+            .resultado {
+                padding: 2rem;
+                background-color: $white;
+                min-height: 22rem;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+                text-align: left;
+                font-size: .85rem;
+
+                .org-name {
+                    font-weight: 600;
+                }
+
+                .divider {
+                    width: 100%;
+                    background-color: #e3e3e3;
+                    height: 1px;
+                    margin: .5rem auto;
+                }
+
+                .data__container {
+
+                    .data {
+                        margin: .5rem 0;
+                        margin-left: .5rem;
+
+                        .info {
+                            font-weight: 600;
+                        }
+                    }
+
+                    .website {
+                        font-weight: 500;
+                    }
+
+                    .data-icon {
+                        display: flex;
+                        flex-direction: row;
+
+                        i {
+                            margin-right: .5rem;
+                            padding-top: 5px;
+                            color: $primary-color;
+                        }
+
+                    }
+
+                    .adress {
+
+                        .data-adress {
+                            display: flex;
+                            flex-direction: column;
+
+                            .gm-adress {
+
+                                .onMaps {
+                                    text-decoration: none;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+
+                    .adInfo {
+                        width: 5rem;
+                        margin: .2rem 0;
+                        padding: .5rem;
+                        border: none;
+                        border-radius: 2rem;
+                        outline: none;
+                        font-size: .8rem;
+                        font-weight: 600;
+                        background-color: #8fd3f4;
+                        float: right;
+
+                        &:hover {
+                            @include gradientAnimation; // Incluye la animación al hacer hover
+                        }
+                    }
+                }
+            }
+
+        }
+
+        #noRFound {
+            div {
+                width: 80%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 1.1rem;
+                text-align: center;
+
+                .noRFound-bold {
+                    font-weight: 600;
+                    color: $blue;
+                }
+
+                img {
+                    margin-top: 1.2rem;
+                    width: 20rem;
+                }
+            }
+        }
+
+        @include breakpoint {
+            .resultados {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #noRFound {
+                div {
+                    img {
+                        width: 18rem;
+                    }
+                }
+            }
+        }
+    }
+}

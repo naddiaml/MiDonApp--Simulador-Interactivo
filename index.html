@@ -70,7 +70,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="#">
-                        <button class="button text-white border-0" onclick="donate()">
+                        <button class="button text-white border-0">
                             Doná!
                         </button>
                     </a>
@@ -85,11 +85,6 @@
             <span><b>Ayudanos</b> a <b>ayudar</b></span>
         </div>
         <div id="hero__svg-container">
-
-            <!-- <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="-300 0 950 270">
-                <path d="M-314,267 C105,364 400,100 812,279" fill="none" stroke="white" stroke-width="120"
-                    stroke-linecap="round" />
-            </svg> -->
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 3841 108.5"
                 style="overflow:scroll;enable-background:new 0 0 3841 108.5;" xml:space="preserve">
@@ -103,55 +98,30 @@
 
     </section>
 
-    <div class="button-container">
-        <button class="button text-white border-0" onclick="donate()">Doná!</button>
-    </div>
-    <div class="org__container">
-        <div class="organizacion">
-            <span class="org-name">Asociación Civil Avanzar por el Desarrollo Humano</span>
-            <div class="divider"></div>
-            <div class="data__container">
-                <div class="data data-icon adress">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <div class="data-adress">Lafuente 3114, Capital Federal, Villa Soldati, Buenos Aires<br>
-                        <span class="gm-adress"><a href="https://goo.gl/maps/ZQXSkrirfhXe3zah6?coh=178573&amp;entry=tt"
-                                target="_blank" class="onMaps">Ver en Google Maps →</a></span>
-                    </div>
-                </div>
-                <div class="data data-icon"><i class="fa-solid fa-phone"></i>4918-0057</div>
-                <div class="data data-icon"><i class="fa-solid fa-at"></i>asociacionavanzar@gmail.com</div>
-                <div class="data"><a href="https://www.avanzar.org.ar" target="_blank"
-                        class="website">www.avanzar.org.ar</a><br></div>
-                <div class="data">
-                    <span class="info">Recibe:</span> Muebles, Tecnología
-                    .
-                </div>
-                <button class="adInfo">+ INFO</button>
-            </div>
-        </div>
-        <div class="organizacion">
-            <span class="org-name">Las Renatas Animales Especiales</span>
-            <div class="divider"></div>
-            <div class="data__container">
-                <div class="data data-icon adress">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <div class="data-adress">Av. Esteban Crovara 1000, Villa Madero, Buenos Aires<br>
-                        <span class="gm-adress"><a href="undefined" target="_blank" class="onMaps">Ver en Google Maps
-                                →</a></span>
-                    </div>
-                </div>
-                <div class="data data-icon"><i class="fa-solid fa-phone"></i>15-3473-2118</div>
-                <div class="data data-icon"><i class="fa-solid fa-at"></i>lasrenatascm@gmail.com</div>
-                <div class="data"></div>
-                <div class="data">
-                    <span class="info">Recibe:</span> Cocina, Colchones y Frazadas, Muebles
-                    y más.
-                </div>
-                <button class="adInfo">+ INFO</button>
-            </div>
-        </div>
-    </div>
+    <section id="Donar" class="info">
 
+        <form class='search-block'>
+            <div class='search-bar'>
+                <input type="text" id="search-box" placeholder="Busca aquí por zona o aquello que quieras donar!">
+                <button type="submit"><i class="search-icon fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            </div>
+        </form>
+
+        <div class="form__container">
+            <div class="resultados">
+                <div id="resultado">
+                </div>
+            </div>
+            <div id="noRFound">
+                <div>
+                    <span class="noRFound-bold">Lo sentimo mucho! 🙁</span>
+                    <span>No se han encontrado resultados para tu búsqueda.</span>
+                    <img src="assets/noResultsFound.svg" alt="No results found · Illustration">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- BootStrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
