@@ -11,29 +11,24 @@
     <!-- Link BootStrap v4.3 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="styles/css/styles.css">
-    <!-- Script Font Awesome -->
-    <script src="https://kit.fontawesome.com/8e95fe90e4.js" crossorigin="anonymous"></script>
     <!--BootStrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script Font Awesome -->
+    <script src="https://kit.fontawesome.com/8e95fe90e4.js" crossorigin="anonymous"></script>
     <!-- SEO Optimization -->
     <meta name="description"
         content="Buscamos conectar personas con organizaciones benéficas con el fin de brindar ayuda a aquellos que más lo necesitan y visibilizar las causas que lo necesitan. Ingresá para conocer todas las causas activas y ayudanos a ayudar.">
-
     <meta name="keywords"
         content="donar, donaciones, quiero donar, ayudar, quiero ayudar, organizaciones beneficas, sin fines de lucro, beneficiencia, voluntariados, caridad">
-
     <meta name="author" content="Nadia Mlinarevic">
-
     <meta property="og:title" content="MiDonApp | Ayudanos a ayudar">
     <meta property="og:image" content="https://ibb.co/4VT7r0b">
     <meta property="og:description"
         content="MiDonApp conecta voluntarios y organizaciones benéficas que deseen obtener algo más de visibilidad y ayuda. Entrá y conocé todas las causas que necesitan de tu ayuda.">
     <meta property="og:creator" content="Nadia Mlinarevic">
-
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles/css/styles.css">
     <script src="js/app.js" defer></script>
     <title>MiDonApp | Ayudanos a ayudar</title>
 </head>
@@ -69,9 +64,9 @@
                     <a href="#">Contactanos</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">
+                    <a href="pages/map.html">
                         <button class="button text-white border-0">
-                            Doná!
+                            Ver en mapa
                         </button>
                     </a>
                 </li>
@@ -123,6 +118,77 @@
         </div>
     </section>
 
+    <div class="report">
+        <div class="text__report">
+            <span>Reportar un problema</span>
+        </div>
+        <div>
+            <button class="icon__report" data-toggle="modal" data-target="#reportarProblema">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="reportarProblema" tabindex="-1" role="dialog" aria-labelledby="reportarProblemaLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="reportarProblemaLabel">Reportar un problema</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="enviarReporte();" id="formReporte">
+                        <fieldset>
+                            <div class="field">
+                                <label for="nombre">Nombre
+                                    <span class="required">*</span>
+                                </label>
+                                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                            </div>
+                            <div class="field">
+                                <label for="email">E-mail
+                                    <span class="required">*</span>
+                                </label>
+                                <input type="email" name="email" id="email" placeholder="nombre@dominio.com">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="field">
+                                <label for="mensaje">Mensaje<span class="required">*</span></label>
+                                <textarea name="mensaje" id="mensaje" cols="30" rows="10"
+                                    placeholder="Escribe aquí tu mensaje."></textarea>
+                            </div>
+                        </fieldset>
+                        <!-- Para el funcionamiento del Form Submit -->
+                        <input type="hidden" name="_next" value="">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_subject" value="Nuevo Reporte">
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="cerrarForm" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="enviarForm" onclick="enviarReporte();">Enviar reporte</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="add-org">
+        <h2>¿Querés sumar tu organización a nuestra base de datos?</h2>
+        <p>Ser parte de nosotros es más simple que nunca. Sólo necesitas llenar el
+            <a href="pages/addOrg.html" class="addOrgForm">siguiente
+                formulario</a> y alguien se pondrá en contacto con vos para seguir con el proceso.
+        </p>
+        <button class="button__add-org"><a href="pages/addOrg.html" class="addOrgForm">Llenar formulario</a></button>
+    </section>
+
     <!-- BootStrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -146,6 +212,8 @@
         });
 
     </script>
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

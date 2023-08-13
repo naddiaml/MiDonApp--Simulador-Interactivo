@@ -1,0 +1,109 @@
+.modal {
+    padding: 0 !important;
+    width: 80%;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden !important;
+
+    .modal-dialog {
+        max-width: 100%;
+
+        .modal-content {
+            border-radius: 5px;
+
+            .modal-header {
+                .modal-title {
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    letter-spacing: -1px;
+                    margin: auto;
+                }
+
+                .close {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    margin: .1rem 1rem;
+                    outline: none;
+                }
+            }
+
+            .modal-body {
+                width: 90%;
+                margin: auto;
+
+                form {
+                    fieldset {
+
+                        &:first-of-type {
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            margin-bottom: 1.5rem;
+                        }
+
+                        .field {
+
+                            label {
+                                font-size: 16px;
+                                font-weight: 700;
+                                margin-bottom: 0.5rem;
+
+                                .required {
+                                    color: #cf3950;
+                                }
+                            }
+
+                            input {
+                                width: 80%;
+                                font-size: 13px;
+                                outline: none;
+                                border: none;
+                                border-bottom: 1px solid #EDEDED;
+                                padding: 0.2rem 0;
+                                display: block;
+                            }
+
+                            #mensaje {
+                                width: 100%;
+                                height: 350px;
+                                resize: none;
+                                padding: 2rem;
+                                background-color: #EDEDED;
+                                border-radius: 0 3rem 3rem 3rem;
+                                font-size: 14px;
+                                outline: none;
+                                border: none;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .modal-footer {
+                button {
+                    outline: none;
+                    border: none;
+
+                    padding: .5rem 1.2rem;
+                    border-radius: 2rem;
+
+                    &.cerrarForm {
+                        border: 1.5px solid #7ecbf1 !important;
+                        color: #7ecbf1 !important;
+                        background-color: $white !important;
+                        font-weight: 600;
+                    }
+
+                    &.enviarForm {
+                        background-color: #8FD3F4;
+                        color: $white;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

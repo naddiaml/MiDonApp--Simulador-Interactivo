@@ -3,6 +3,48 @@
 /* Archivo específico para variables */
 /* Archivo específico para mixins */
 /* Mixin para flexbox. Llamando a las variables $align y $justify como argumentos, se podrá cambiar su valor */
+/* Estilos específicos para las ventanas de Sweet Alert */
+.swal2-icon.swal2-success {
+  border-color: #8FD3F4 !important;
+  color: #8FD3F4 !important;
+}
+
+.swal2-success-circular-line-left,
+.swal2-success-fix,
+.swal2-success-fix,
+.swal2-success-circular-line-right {
+  background-color: transparent !important;
+}
+
+.swal2-icon.swal2-success [class^=swal2-success-line] {
+  background-color: #8FD3F4 !important;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: #8FD3F4;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 1.5rem;
+}
+
+.swal2-styled.swal2-cancel {
+  border: 1.5px solid #8FD3F4 !important;
+  color: #8FD3F4 !important;
+  background-color: #ffffff !important;
+  border-radius: 2rem;
+  font-weight: 600;
+}
+
+.swal2-footer a {
+  color: #7166EF;
+  font-weight: 600;
+  text-decoration: none;
+}
+.swal2-footer a:hover {
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
 /* Archivo Reset con estilos universales */
 * {
   margin: 0;
@@ -409,6 +451,444 @@ header .button:hover {
   }
   #Donar .form__container #noRFound div img {
     width: 18rem;
+  }
+}
+
+.report {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 2%;
+  right: 0.8rem;
+}
+.report .text__report {
+  background-color: #ffffff;
+  color: #8FD3F4;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0px 3px 20px -10px rgb(100, 100, 100);
+}
+.report div .icon__report {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: #8FD3F4;
+  color: #ffffff;
+  font-size: 1.3rem;
+  outline: none;
+}
+
+.modal {
+  padding: 0 !important;
+  width: 80%;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden !important;
+}
+.modal .modal-dialog {
+  max-width: 100%;
+}
+.modal .modal-dialog .modal-content {
+  border-radius: 5px;
+}
+.modal .modal-dialog .modal-content .modal-header .modal-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin: auto;
+}
+.modal .modal-dialog .modal-content .modal-header .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.1rem 1rem;
+  outline: none;
+}
+.modal .modal-dialog .modal-content .modal-body {
+  width: 90%;
+  margin: auto;
+}
+.modal .modal-dialog .modal-content .modal-body form fieldset:first-of-type {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 1.5rem;
+}
+.modal .modal-dialog .modal-content .modal-body form fieldset .field label {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.modal .modal-dialog .modal-content .modal-body form fieldset .field label .required {
+  color: #cf3950;
+}
+.modal .modal-dialog .modal-content .modal-body form fieldset .field input {
+  width: 80%;
+  font-size: 13px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #EDEDED;
+  padding: 0.2rem 0;
+  display: block;
+}
+.modal .modal-dialog .modal-content .modal-body form fieldset .field #mensaje {
+  width: 100%;
+  height: 350px;
+  resize: none;
+  padding: 2rem;
+  background-color: #EDEDED;
+  border-radius: 0 3rem 3rem 3rem;
+  font-size: 14px;
+  outline: none;
+  border: none;
+}
+.modal .modal-dialog .modal-content .modal-footer button {
+  outline: none;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 2rem;
+}
+.modal .modal-dialog .modal-content .modal-footer button.cerrarForm {
+  border: 1.5px solid #7ecbf1 !important;
+  color: #7ecbf1 !important;
+  background-color: #ffffff !important;
+  font-weight: 600;
+}
+.modal .modal-dialog .modal-content .modal-footer button.enviarForm {
+  background-color: #8FD3F4;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Estilos de la página del formulario para añadir organizaciones */
+.add-org {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.add-org h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.add-org p {
+  width: 70%;
+  margin: auto;
+}
+.add-org p a.addOrgForm {
+  cursor: pointer;
+  font-weight: 600;
+  color: #8FD3F4;
+}
+.add-org p a.addOrgForm:hover {
+  text-decoration: none;
+}
+.add-org .button__add-org {
+  margin: 1rem auto 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  background-color: #8FD3F4;
+}
+.add-org .button__add-org a {
+  color: #ffffff;
+  font-weight: 600;
+}
+.add-org .button__add-org a:hover {
+  text-decoration: none;
+}
+
+.modal-addOrg {
+  width: 80%;
+  height: 90%;
+  margin: auto;
+}
+.modal-addOrg h2 {
+  text-align: center;
+  font-size: 17.5px;
+  margin: 4rem auto 3rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+.modal-addOrg .modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1.5rem 3rem 2rem;
+  float: right;
+  cursor: pointer;
+}
+.modal-addOrg .modal__close span {
+  text-decoration: none;
+  color: #b5b5b5;
+  font-weight: 500;
+  font-size: 13px;
+}
+.modal-addOrg .modal__close span:hover {
+  font-weight: 600;
+  transition: 0.5s;
+  color: #6f6f6f;
+}
+.modal-addOrg .modal__close span i {
+  margin-right: 1rem;
+}
+.modal-addOrg #registrationForm {
+  height: 75%;
+}
+.modal-addOrg #registrationForm .progress-bar-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto 3rem;
+}
+.modal-addOrg #registrationForm .progress-bar-container .step {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 20%;
+  font-weight: 500;
+}
+.modal-addOrg #registrationForm .progress-bar-container .step .step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.modal-addOrg #registrationForm .progress-bar-container .step .step-description {
+  text-align: center;
+  font-size: 14px;
+}
+.modal-addOrg #registrationForm #infoScreen .about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+}
+.modal-addOrg #registrationForm #infoScreen .about-container .about__icon {
+  text-align: center;
+  width: 20%;
+  margin-right: 1.2rem;
+  color: #8FD3F4;
+  font-size: 30px;
+}
+.modal-addOrg #registrationForm #infoScreen .about-container .about__text {
+  font-size: 15px;
+  width: 50%;
+  margin-bottom: 2rem;
+}
+.modal-addOrg #registrationForm #infoScreen .about-container .about__text p {
+  margin-top: 0.8rem;
+}
+.modal-addOrg #registrationForm .form__button-container {
+  width: fit-content;
+  margin: auto;
+}
+.modal-addOrg #registrationForm .form__button-container button {
+  margin: 1.5rem auto;
+  padding: 0.6rem 1rem;
+  background-color: #8FD3F4;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.modal-addOrg #registrationForm .form__button-container button.btn-previousStep {
+  border: 1.5px solid #8FD3F4;
+  color: #8FD3F4;
+  background-color: white;
+}
+.modal-addOrg #registrationForm .step-cont .row {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.modal-addOrg #registrationForm .step-cont .row:not(:first-child) {
+  margin: 2rem auto;
+}
+.modal-addOrg #registrationForm .step-cont .row label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.modal-addOrg #registrationForm .step-cont .row label .required {
+  color: #cf3950;
+}
+.modal-addOrg #registrationForm .step-cont .row input[type=text],
+.modal-addOrg #registrationForm .step-cont .row input[type=email] {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #EDEDED;
+  padding: 0.2rem 0;
+  display: block;
+  font-size: 14px;
+}
+.modal-addOrg #registrationForm .step-cont .row input[type=tel] {
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+.modal-addOrg #registrationForm #step3 {
+  margin-left: 1rem;
+}
+.modal-addOrg #registrationForm #step3 .confirmacion-s3 {
+  margin-left: 2rem;
+}
+.modal-addOrg #registrationForm #step3 .confirmacion-s3 p {
+  margin-top: 1rem;
+}
+
+/* Estilos específicos del mapa */
+html.map-html,
+body.map-body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+html.map-html .map-container,
+body.map-body .map-container {
+  width: 100%;
+  height: calc(100% - 3.5rem);
+}
+html.map-html .map-container #map,
+body.map-body .map-container #map {
+  width: 100%;
+  height: 100%;
+}
+html.map-html .map-container #map .gm-ui-hover-effect,
+body.map-body .map-container #map .gm-ui-hover-effect {
+  top: 0 !important;
+  right: 10px !important;
+  outline: none;
+}
+html.map-html .map-container #map .gm-ui-hover-effect span,
+body.map-body .map-container #map .gm-ui-hover-effect span {
+  width: 20px !important;
+  height: 20px !important;
+}
+html.map-html .map-container #map #content,
+body.map-body .map-container #map #content {
+  max-width: 20rem;
+  padding: 1rem 0 0 1rem;
+  line-height: 1.2rem;
+}
+html.map-html .map-container #map #content .org-name,
+body.map-body .map-container #map #content .org-name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+html.map-html .map-container #map #content .divider,
+body.map-body .map-container #map #content .divider {
+  width: 100%;
+  background-color: #e3e3e3;
+  height: 1px;
+  margin: 0.5rem auto;
+}
+html.map-html .map-container #map #content .data__container,
+body.map-body .map-container #map #content .data__container {
+  max-width: 95%;
+}
+html.map-html .map-container #map #content .data__container .data,
+body.map-body .map-container #map #content .data__container .data {
+  margin: 0.5rem 0;
+  margin-left: 0.5rem;
+}
+html.map-html .map-container #map #content .data__container .data .info,
+body.map-body .map-container #map #content .data__container .data .info {
+  font-weight: 600;
+}
+html.map-html .map-container #map #content .data__container .website,
+body.map-body .map-container #map #content .data__container .website {
+  font-weight: 500;
+}
+html.map-html .map-container #map #content .data__container .data-icon,
+body.map-body .map-container #map #content .data__container .data-icon {
+  display: flex;
+  flex-direction: row;
+}
+html.map-html .map-container #map #content .data__container .data-icon i,
+body.map-body .map-container #map #content .data__container .data-icon i {
+  margin-right: 0.5rem;
+  padding-top: 5px;
+  color: #8FD3F4;
+}
+html.map-html .map-container #map #content .data__container .adress .data-adress,
+body.map-body .map-container #map #content .data__container .adress .data-adress {
+  display: flex;
+  flex-direction: column;
+}
+html.map-html .map-container #map #content .data__container .adress .data-adress .gm-adress .onMaps,
+body.map-body .map-container #map #content .data__container .adress .data-adress .gm-adress .onMaps {
+  text-decoration: none;
+  font-weight: 500;
+}
+html.map-html .map-container #map #content .adInfo,
+body.map-body .map-container #map #content .adInfo {
+  width: 5rem;
+  margin: 0.2rem 0;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 2rem;
+  outline: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background-color: #8fd3f4;
+  float: right;
+}
+html.map-html .map-container #map #content .adInfo:hover,
+body.map-body .map-container #map #content .adInfo:hover {
+  animation: gradientAnimation 0.2s ease-in-out forwards;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-color: #8FD3F4;
+  }
+  10% {
+    background: linear-gradient(15deg, #8FD3F4, #85cbf2);
+  }
+  20% {
+    background: linear-gradient(30deg, #8FD3F4, #7bc3f1);
+  }
+  30% {
+    background: linear-gradient(45deg, #8FD3F4, #72bbed);
+  }
+  40% {
+    background: linear-gradient(60deg, #8FD3F4, #68b5eb);
+  }
+  50% {
+    background: linear-gradient(75deg, #8FD3F4, #5faeec);
+  }
+  60% {
+    background: linear-gradient(90deg, #8FD3F4, #56a6e9);
+  }
+  70% {
+    background: linear-gradient(105deg, #8FD3F4, #4c9ee8);
+  }
+  80% {
+    background: linear-gradient(120deg, #8FD3F4, #4396e6);
+  }
+  90% {
+    background: linear-gradient(135deg, #8FD3F4, #3a8de5);
+  }
+  100% {
+    background: linear-gradient(150deg, #8FD3F4, #7166EF);
   }
 }
 

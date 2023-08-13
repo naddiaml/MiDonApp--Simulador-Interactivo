@@ -1,0 +1,43 @@
+.swal2-icon.swal2-success {
+    border-color: #8FD3F4 !important;
+    color: #8FD3F4 !important;
+}
+
+.swal2-success-circular-line-left,
+.swal2-success-fix,
+.swal2-success-fix,
+.swal2-success-circular-line-right {
+    background-color: transparent !important;
+}
+
+.swal2-icon.swal2-success [class^=swal2-success-line] {
+    background-color: #8FD3F4 !important;
+}
+
+.swal2-styled.swal2-confirm {
+    background-color: #8FD3F4;
+    color: $white;
+    font-weight: 600;
+    border-radius: 1.5rem;
+}
+
+.swal2-styled.swal2-cancel {
+    border: 1.5px solid #8FD3F4 !important;
+    color: #8FD3F4 !important;
+    background-color: $white !important;
+    border-radius: 2rem;
+    font-weight: 600;
+}
+
+.swal2-footer {
+    a {
+        color: $secondary-color;
+        font-weight: 600;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+            transition: .5s;
+        }
+    }
+}

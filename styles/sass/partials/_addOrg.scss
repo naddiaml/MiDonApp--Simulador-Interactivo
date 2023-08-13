@@ -1,0 +1,226 @@
+.add-org {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+
+    h2 {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    p {
+        width: 70%;
+        margin: auto;
+
+        a.addOrgForm {
+            cursor: pointer;
+            font-weight: 600;
+            color: $primary-color;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .button__add-org {
+        margin: 1rem auto 2rem;
+        padding: .5rem 1rem;
+        border-radius: 1.5rem;
+        border: none;
+        outline: none;
+        background-color: $primary-color;
+
+        a {
+            color: $white;
+            font-weight: 600;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+
+.modal-addOrg {
+    width: 80%;
+    height: 90%;
+    margin: auto;
+
+    h2 {
+        text-align: center;
+        font-size: 17.5px;
+        margin: 4rem auto 3rem;
+        font-weight: 700;
+        letter-spacing: -1px;
+    }
+
+
+
+    .modal__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 1.5rem 3rem 2rem;
+        float: right;
+        cursor: pointer;
+
+        span {
+            text-decoration: none;
+            color: #b5b5b5;
+            font-weight: 500;
+            font-size: 13px;
+
+            &:hover {
+                font-weight: 600;
+                transition: .5s;
+                color: #6f6f6f;
+            }
+
+            i {
+                margin-right: 1rem;
+            }
+        }
+    }
+
+
+    #registrationForm {
+        height: 75%;
+
+        .progress-bar-container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: 0 auto 3rem;
+
+            .step {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                width: 20%;
+                font-weight: 500;
+
+                .step-number {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    width: 2rem;
+                    height: 2rem;
+                    margin-bottom: .5rem;
+                    font-weight: 600;
+                }
+
+                .step-description {
+                    text-align: center;
+                    font-size: 14px
+                }
+            }
+        }
+
+        #infoScreen {
+            .about-container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 80%;
+                margin: auto;
+
+                .about__icon {
+                    text-align: center;
+                    width: 20%;
+                    margin-right: 1.2rem;
+                    color: #8FD3F4;
+                    font-size: 30px;
+                }
+
+                .about__text {
+                    font-size: 15px;
+                    width: 50%;
+                    margin-bottom: 2rem;
+
+                    & p {
+                        margin-top: .8rem;
+                    }
+                }
+            }
+        }
+
+        .form__button-container {
+            width: fit-content;
+            margin: auto;
+
+            & button {
+                margin: 1.5rem auto;
+                padding: .6rem 1rem;
+                background-color: #8FD3F4;
+                color: white;
+                font-weight: 600;
+                border: none;
+                border-radius: 2rem;
+                cursor: pointer;
+
+                &.btn-previousStep {
+                    border: 1.5px solid #8FD3F4;
+                    color: #8FD3F4;
+                    background-color: white;
+                }
+            }
+        }
+
+        .step-cont {
+            .row {
+                width: 80%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+
+                &:not(:first-child) {
+                    margin: 2rem auto;
+                }
+
+                label {
+                    font-weight: 600;
+                    margin-bottom: 0.5rem;
+
+                    .required {
+                        color: #cf3950;
+                    }
+
+                }
+
+                input[type=text],
+                input[type=email] {
+                    width: 100%;
+                    outline: none;
+                    border: none;
+                    border-bottom: 1px solid #EDEDED;
+                    padding: 0.2rem 0;
+                    display: block;
+                    font-size: 14px;
+                }
+
+                input[type=tel] {
+                    border: none;
+                    outline: none;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        #step3 {
+            margin-left: 1rem;
+
+            .confirmacion-s3 {
+                margin-left: 2rem;
+
+                p{
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+}

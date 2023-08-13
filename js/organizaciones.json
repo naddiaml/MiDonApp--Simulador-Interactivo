@@ -1,0 +1,97 @@
+[
+    {
+        "nombre": "Asociación Civil Avanzar por el Desarrollo Humano",
+        "direccion": "Lafuente  3114, Capital Federal, Villa Soldati, Buenos Aires",
+        "enMaps": "https://goo.gl/maps/ZQXSkrirfhXe3zah6?coh=178573&entry=tt",
+        "lat": -34.66188366538485,
+        "lng": -58.43941028959091,
+        "telefono": "4918-0057",
+        "email": "asociacionavanzar@gmail.com",
+        "sitio": "www.avanzar.org.ar",
+        "recibe": [
+            "Muebles",
+            "Tecnología"
+        ]
+    },
+    {
+        "nombre": "Las Renatas Animales Especiales",
+        "direccion": "Av. Esteban Crovara 1000, Villa Madero, Buenos Aires",
+        "enMaps": "https://goo.gl/maps/vdZ3xrZHgFvJJT92A",
+        "lat": -34.68001715912609,
+        "lng": -58.51105976260945,
+        "telefono": "15-3473-2118",
+        "email": "lasrenatascm@gmail.com",
+        "sitio": "",
+        "recibe": [
+            "Cocina",
+            "Colchones y Frazadas",
+            "Muebles",
+            "Otros (Alimento balanceado, higiene y limpieza, materiales de construcción, pintura)",
+            "Salud (Incluye medicinas)",
+            "Tecnología",
+            "Alimentos"
+        ]
+    },
+    {
+        "nombre": "Acorn Argentina",
+        "direccion": "Av. Cabildo 508, Villa Madero, La Matanza, Buenos Aires",
+        "enMaps": "https://goo.gl/maps/SBMMPEQY5nMTMPkA9",
+        "lat": -34.688423861815835,
+        "lng": -58.50885266152633,
+        "telefono": "(011) 1562086009",
+        "email": "acornargentina@gmail.com",
+        "sitio": "http://www.acorninternational.org",
+        "recibe": [
+            "Otros (Alimento balanceado, higiene y limpieza, materiales de construcción, pintura)"
+        ]
+    },
+    {
+        "nombre": "El Rumbo, casa cultural",
+        "direccion": "Virrey Vertiz 4721, PB, La Tablada, Buenos Aires",
+        "enMaps": "https://goo.gl/maps/bJ4zMDtpFdY1yMYb7",
+        "lat": -34.67546618657374,
+        "lng": -58.51340931339745,
+        "telefono": "15-5702-4527",
+        "email": "elrumbocultural@gmail.com",
+        "sitio": "",
+        "recibe": [
+            "Alimentos",
+            "Libros",
+            "Muebles",
+            "Artículos de recreación",
+            "Tecnología",
+            "Útiles escolares"
+        ]
+    },
+    {
+        "nombre": "Escuela Ciudad Oculta",
+        "direccion": "Santander 5955, 1439, Mataderos, CABA, Ciudad de Buenos Aires",
+        "enMaps": "https://goo.gl/maps/EdT8PZkXorLr7pMK7",
+        "lat": -34.672721901504424,
+        "lng": -58.486201984946646,
+        "telefono": "1161378923",
+        "email": "damianreynoso05@gmail.com",
+        "sitio": "",
+        "recibe": [
+            "Cocina",
+            "Muebles",
+            "Otros (Alimento balanceado, higiene y limpieza, materiales de construcción, pintura)",
+            "Artículos de recreación",
+            "Tecnología"
+        ]
+    },
+    {
+        "nombre": "Colegio Parroquial San Carlos Borromeo",
+        "direccion": "Olavarría 1835, Villa Madero",
+        "enMaps": "https://goo.gl/maps/4ipxeeEzu7dqPwn49?coh=178573&entry=tt",
+        "lat": -34.69247468146041,
+        "lng": -58.494801633729416,
+        "telefono": "(011) 4442 - 5348",
+        "email": "-",
+        "sitio": "www.colegioborromeo.edu.ar",
+        "recibe": [
+            "Inmobiliario escolar",
+            "Útiles escolares"
+        ]
+    }
+]

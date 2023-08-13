@@ -7,8 +7,19 @@
 /* Archivo específico para mixins */
 @import 'base/_mixins.scss';
 
+/* Estilos específicos para las ventanas de Sweet Alert */
+@import 'base/_sweet-alert.scss';
+
 /* Archivo Reset con estilos universales */
 @import 'base/_reset.scss';
 @import 'partials/_header.scss';
 @import 'partials/_hero.scss';
 @import 'partials/_search-section.scss';
+@import 'partials/_report-problem.scss';
+@import 'partials/_bootstrap-modal.scss';
+
+/* Estilos de la página del formulario para añadir organizaciones */
+@import 'partials/_addOrg.scss';
+
+/* Estilos específicos del mapa */
+@import 'partials/_map.scss';
